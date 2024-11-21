@@ -7,7 +7,7 @@
     <meta name="keywords" content="Male_Fashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cửa hàng đồng hồ đôi</title>
+    <title>Cửa hàng </title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
@@ -43,7 +43,7 @@
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
                             <div class="header__top__links">
-                                <a href="login.html">Đăng nhập</a>
+                                <a href="login.php">Đăng nhập</a>
                                 <a href="#">FAQs</a>
                             </div>
                             <div class="header__top__hover">
@@ -63,23 +63,23 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img2/logowweb.webp" alt=""></a>
+                        <a href="./index.php"><img src="img2/logowweb.webp" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li><a href="./index.html">Trang chủ</a></li>
-                            <li class="active"><a href="./shop.html">Cửa hàng</a></li>
-                            <li><a href="#">Trang</a>
+                            <li><a href="./index.php">Trang chủ</a></li>
+                            <li class="active"><a href="/shop.php">Cửa hàng</a></li>
+                            <li><a href="shop.php">Trang</a>
                                 <ul class="dropdown">
-                                    <li><a href="./about.html">giới thiệu</a></li>
-                                    <li><a href="./shop-details.html">Chi tiết cửa hàng</a></li>
-                                    <li><a href="./shopping-cart.html">Giỏ hàng</a></li>
-                                    <li><a href="./checkout.html">Kiểm tra</a></li>
+                                    <li><a href="./about.php">giới thiệu</a></li>
+                                    <li><a href="./shop-details.php">Chi tiết cửa hàng</a></li>
+                                    <li><a href="./shopping-cart.php">Giỏ hàng</a></li>
+                                    <li><a href="./checkout.php">Kiểm tra</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./contact.html">Liên hệ</a></li>
+                            <li><a href="./contact.php">Liên hệ</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -106,7 +106,7 @@
                     <div class="breadcrumb__text">
                         <h4>Cửa hàng</h4>
                         <div class="breadcrumb__links">
-                            <a href="./index.html">Trang chủ</a>
+                            <a href="./index.php">Trang chủ</a>
                             <span>Cửa hàng</span>
                         </div>
                     </div>
@@ -139,9 +139,9 @@
                                         <div class="card-body">
                                             <div class="shop__sidebar__categories">
                                                 <ul class="nice-scroll">
-                                                    <li><a href="shop.html">Đồng hồ nữ (20)</a></li>
-                                                    <li><a href="shopnam.html">Đồng hồ nam (20)</a></li>
-                                                    <li><a href="shopdoi.html">Đồng hồ đôi (20)</a></li>
+                                                    <li><a href="shop.php">Đồng hồ nữ (20)</a></li>
+                                                    <li><a href="shopnam.php">Đồng hồ nam (20)</a></li>
+                                                    <li><a href="shopdoi.php">Đồng hồ đôi (20)</a></li>
                                                     
                                                 </ul>
                                             </div>
@@ -228,7 +228,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img2/doi1.webp">
+                                <div class="product__item__pic set-bg" data-setbg="img2/nu1.webp">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -237,8 +237,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Đồng hồ đôi Tissot Le Locle Automatic T932.408.41.033.00</h6>
-                                    <a href="#" class="add-cart">+ Thêm vào giỏ hàng</a>
+                                    <h6>Piqué Biker Jacket</h6>
+                                    <a href="#" class="add-cart">+ Add To Cart</a>
                                     <div class="rating">
                                         <i class="fa fa-star-o"></i>
                                         <i class="fa fa-star-o"></i>
@@ -263,7 +263,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item sale">
-                                <div class="product__item__pic set-bg" data-setbg="img2/doi2.webp">
+                                <div class="product__item__pic set-bg" data-setbg="img2/nu2.webp">
                                     <span class="label">Sale</span>
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
@@ -273,8 +273,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Đồng hồ đôi Mido M049.526.11.081.00</h6>
-                                    <a href="#" class="add-cart">+ Thêm vào giỏ hàng</a>
+                                    <h6>Multi-pocket Chest Bag</h6>
+                                    <a href="#" class="add-cart">+ Add To Cart</a>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -299,7 +299,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img2/doi3.webp">
+                                <div class="product__item__pic set-bg" data-setbg="img2/nu3.webp">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -308,8 +308,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Đồng hồ đôi Mido M049.526.11.041.00</h6>
-                                    <a href="#" class="add-cart">+ Thêm vào giỏ hàng</a>
+                                    <h6>Diagonal Textured Cap</h6>
+                                    <a href="#" class="add-cart">+ Add To Cart</a>
                                     <div class="rating">
                                         <i class="fa fa-star-o"></i>
                                         <i class="fa fa-star-o"></i>
@@ -334,7 +334,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item sale">
-                                <div class="product__item__pic set-bg" data-setbg="img2/doi4.webp">
+                                <div class="product__item__pic set-bg" data-setbg="img2/nu4.webp">
                                     <span class="label">Sale</span>
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
@@ -344,8 +344,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Đồng hồ đôi Frederique Constant FC-303MPWN1B6B</h6>
-                                    <a href="#" class="add-cart">+ Thêm vào giỏ hàng</a>
+                                    <h6>Ankle Boots</h6>
+                                    <a href="#" class="add-cart">+ Add To Cart</a>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -370,7 +370,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img2/doi5.webp">
+                                <div class="product__item__pic set-bg" data-setbg="img2/nu5.webp">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -379,8 +379,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Đồng hồ đôi Frederique Constant Index FC-303WN5B3B</h6>
-                                    <a href="#" class="add-cart">+ Thêm vào giỏ hàng</a>
+                                    <h6>T-shirt Contrast Pocket</h6>
+                                    <a href="#" class="add-cart">+ Add To Cart</a>
                                     <div class="rating">
                                         <i class="fa fa-star-o"></i>
                                         <i class="fa fa-star-o"></i>

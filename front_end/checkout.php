@@ -11,7 +11,7 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -73,7 +73,7 @@
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
                             <div class="header__top__links">
-                                <a href="login.html">Đăng nhập</a>
+                                <a href="login.php">Đăng nhập</a>
                                 <a href="#">FAQs</a>
                             </div>
                             <div class="header__top__hover">
@@ -93,23 +93,23 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img2/logowweb.webp" alt=""></a>
+                        <a href="./index.php"><img src="img2/logowweb.webp" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li><a href="./index.html">Trang chủ</a></li>
-                            <li class="active"><a href="./shop.html">Cửa hàng</a></li>
+                            <li><a href="./index.php">Trang chủ</a></li>
+                            <li class="active"><a href="./shop.php">Cửa hàng</a></li>
                             <li><a href="#">Trang</a>
                                 <ul class="dropdown">
-                                    <li><a href="./about.html">giới thiệu</a></li>
-                                    <li><a href="./shop-details.html">Chi tiết cửa hàng</a></li>
-                                    <li><a href="./shopping-cart.html">Giỏ hàng</a></li>
-                                    <li><a href="./checkout.html">Kiểm tra</a></li>
+                                    <li><a href="./about.php">giới thiệu</a></li>
+                                    <li><a href="./shop-details.php">Chi tiết cửa hàng</a></li>
+                                    <li><a href="./shopping-cart.php">Giỏ hàng</a></li>
+                                    <li><a href="./checkout.php">Kiểm tra</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./contact.html">Liên hệ</a></li>
+                            <li><a href="./contact.php">Liên hệ</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -117,6 +117,8 @@
                     <div class="header__nav__option">
                             <input name="fsrch" id="fsrch" placeholder="Tìm Kiếm ở Đây">
                             <input type="submit" name="" id="" value="tìm kiếm">
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -125,58 +127,130 @@
     </header>
     <!-- Header Section End -->
 
-    <!-- Map Begin -->
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111551.9926412813!2d-90.27317134641879!3d38.606612219170856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1597926938024!5m2!1sen!2sbd" height="500" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
-    <!-- Map End -->
-
-    <!-- Contact Section Begin -->
-    <section class="contact spad">
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="contact__text">
-                        <div class="section-title">
-                            <span>Information</span>
-                            <h2>Contact Us</h2>
-                            <p>As you might expect of a company that began as a high-end interiors contractor, we pay
-                                strict attention.</p>
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Kiểm tra</h4>
+                        <div class="breadcrumb__links">
+                            <a href="./index.php">Trang chủ</a>
+                            <a href="./shop.php">Shop</a>
+                            <span>Kiểm tra</span>
                         </div>
-                        <ul>
-                            <li>
-                                <h4>America</h4>
-                                <p>195 E Parker Square Dr, Parker, CO 801 <br />+43 982-314-0958</p>
-                            </li>
-                            <li>
-                                <h4>France</h4>
-                                <p>109 Avenue Léon, 63 Clermont-Ferrand <br />+12 345-423-9893</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="contact__form">
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <input type="text" placeholder="Name">
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="text" placeholder="Email">
-                                </div>
-                                <div class="col-lg-12">
-                                    <textarea placeholder="Message"></textarea>
-                                    <button type="submit" class="site-btn">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Contact Section End -->
+    <!-- Breadcrumb Section End -->
+
+    <!-- Checkout Section Begin -->
+    <section class="checkout spad">
+        <div class="container">
+            <div class="checkout__form">
+                <form action="#">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6">
+                            <h6 class="coupon__code"><span class="icon_tag_alt"></span> Có phiếu giảm giá ? <a href="#"> Nhấp vào đây dể nhập mã của bạn
+                            </a></h6>
+                            <h6 class="checkout__title">Chi tiết Thanh toán</h6>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Tên<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Họ<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__input">
+                                <p>Quốc gia<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="checkout__input">
+                                <p>Địa chỉ<span>*</span></p>
+                                <input type="text" placeholder="Street Address" class="checkout__input__add">
+                                <input type="text" placeholder="Apartment, suite, unite ect (optinal)">
+                            </div>
+                            <div class="checkout__input">
+                                <p>Thị trấn/thành phố<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="checkout__input">
+                                <p>Mã bưu chính/ ZIP<span>*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Điện thoại<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Email<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="checkout__input">
+                                <p>Ghi chú đơn hàng<span>*</span></p>
+                                <input type="text"
+                                placeholder="Notes about your order, e.g. special notes for delivery.">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="checkout__order">
+                                <h4 class="order__title">Đơn hàng của bạn</h4>
+                                <div class="checkout__order__products">Sản phẩm <span>Tổng cộng</span></div>
+                                <ul class="checkout__total__products">
+                                    <li>Tissot Chemin des Tourelles Powermatic 80<span>24.255.000₫</span></li>
+                                    <li>Tissot PRX Powermatic<span>	18.900.000₫</span></li>
+                                    
+                                </ul>
+                                <ul class="checkout__total__all">
+                                    <li>Tổng cộng <span>43,155,000đ</span></li>
+                                </ul>
+                                <div class="checkout__input__checkbox">
+                                    <label for="acc-or">
+                                        
+                                        <input type="checkbox" id="acc-or">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                
+                                <div class="checkout__input__checkbox">
+                                    <label for="payment">
+                                        thanh toán khi nhận hàng
+                                        <input type="checkbox" id="payment">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="checkout__input__checkbox">
+                                    <label for="paypal">
+                                        Ví momo
+                                        <input type="checkbox" id="paypal">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="site-btn">Đặt hàng ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Checkout Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer">
@@ -185,39 +259,41 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                            <a href="#"><img src="img2/logowweb.webp" alt=""></a>
                         </div>
-                        <p>The customer is at the heart of our unique business model, which includes design.</p>
+                        <p>Khách hàng là trung tâm của mô hình kinh doanh độc đáo của chúng tôi, bao gồm cả thiết kế.</p>
                         <a href="#"><img src="img/payment.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
                     <div class="footer__widget">
-                        <h6>Shopping</h6>
+                        <h6>Chăm sóc khách hàng</h6>
                         <ul>
-                            <li><a href="#">Clothing Store</a></li>
-                            <li><a href="#">Trending Shoes</a></li>
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">Sale</a></li>
+                            <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#">Chính sách đổi trả</a></li>
+                            <li><a href="#">Chính sách bảo hành</a></li>
+                            <li><a href="#">Dịch vụ và sửa chữa</a></li>
+                            <li><a href="#">Hướng dẫn sử dụng đồng hồ</a></li>
+                            <li><a href="#">Chính sách Khách hàng thân thiết</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6">
                     <div class="footer__widget">
-                        <h6>Shopping</h6>
+                        <h6>DONGHODUYANH</h6>
                         <ul>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Payment Methods</a></li>
-                            <li><a href="#">Delivary</a></li>
-                            <li><a href="#">Return & Exchanges</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Triết lý kinh doanh</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
                     <div class="footer__widget">
-                        <h6>NewLetter</h6>
+                        <h6>Địa chỉ</h6>
                         <div class="footer__newslatter">
-                            <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                            <p>Địa chỉ: 205 Trần Hưng Đạo, phường Cô Giang, Quận 1, TP.Hồ Chí Minh (gần Ngân hàng Vietinbank)
+                                Điện thoại: 0836.88.99.86
+                                Email: duyanhwatch@gmail.com</p>
                             <form action="#">
                                 <input type="text" placeholder="Your email">
                                 <button type="submit"><span class="icon_mail_alt"></span></button>
@@ -235,7 +311,7 @@
                                 document.write(new Date().getFullYear());
                             </script>2020
                             All rights reserved | This template is made with <i class="fa fa-heart-o"
-                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                         </p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
