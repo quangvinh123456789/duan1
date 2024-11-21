@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>them</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+<form id="box" class="container">
+        <label for="">Tên san pham</label>
+        <input class='form-control' type="text" name="" id="ten" placeholder="ten san pham" >
+        <br>
+        <label for="">thuong hieu</label>
+        <input class='form-control'type="text" name="" id="thuonghieu" placeholder="thuonghieu" >
+        <br>
+        <label for="">mo ta</label>
+        <input class='form-control'type="text" name="" id="mota" placeholder="mota" >
+        <br>
+        <label for="">Giá Thành</label>
+        <input class='form-control'type="text" name="" id="gia" placeholder="gia" >
+        <br>
+        <button class='btn btn-primary'type="submit">add</button>
+    </form>
+    <script>
+        const params = new URLSearchParams(location.search)
+        const boxid = params.get("id")
+        console.log(boxid)
+        const sanpham= async(id)=>{
+            const add= await fetch(`http://localhost:3000/products/${id}`)
+            const add1 = await add.json()
+            ten.value= add1.ten,
+                thuonghieu.value= add1.thuonghieu,
+                mota.value = add1.mota,
+                gia.value = add1.gia
+        }
+        sanpham(boxid)
+        const ten = document.getElementById("ten")
+        const thuonghieu = document.getElementById("thuonghieu")
+        const mota = document.getElementById("mota")
+        const gia = document.getElementById("gia")
+        const box = document.getElementById("box")
+        box.addEventListener("submit", async (e)=>{
+            e.preventDefault()
+            const data ={
+                ten:ten.value,
+                thuonghieu:thuonghieu.value,
+                mota:mota.value,
+                gia:gia.value,
+            }
+            try {
+                const list = await fetch(`  http://localhost:3000/products/${boxid}`,{
+                    method : "put",
+                    headers :{"Content-Type":"Application/json"},
+                    body : JSON.stringify(data)
+                })
+                if (list.ok) {
+                    window.location= "list.html"
+                    alert("thanhcong")
+                } else {
+                    alert("thatbai")
+                }
+            } catch (error) {
+                alert("thatbai1")
+                
+            }
+        })
+
+    </script>
+</body>
+</html>
