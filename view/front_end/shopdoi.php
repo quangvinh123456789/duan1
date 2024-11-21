@@ -26,6 +26,75 @@
 
 <body>
 
+<<<<<<< HEAD:view/front_end/shopdoi.php
+=======
+    <!-- Offcanvas Menu Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="header__top__left">
+                            <p>Miễn phí vận chuyển, đảm bảo hoàn trả hoặc hoàn tiền trong 30 ngày.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="header__top__right">
+                            <div class="header__top__links">
+                                <a href="login.">Đăng nhập</a>
+                                <a href="#">FAQs</a>
+                            </div>
+                            <div class="header__top__hover">
+                                <span>Đồng<i class="arrow_carrot-down"></i></span>
+                                <ul>
+                                    <li>Đồng</li>
+                                    <li>EUR</li>
+                                    <li>Đồng</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="./index."><img src="img2/logowweb.webp" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li><a href="./index.">Trang chủ</a></li>
+                            <li class="active"><a href="./shop.">Cửa hàng</a></li>
+                            <li><a href="#">Trang</a>
+                                <ul class="dropdown">
+                                    <li><a href="./about.">giới thiệu</a></li>
+                                    <li><a href="./shop-details.">Chi tiết cửa hàng</a></li>
+                                    <li><a href="./shopping-cart.">Giỏ hàng</a></li>
+                                    <li><a href="./checkout.">Kiểm tra</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./contact.">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div style="display: flex;">
+                    <div class="header__nav__option">
+                            <input name="fsrch" id="fsrch" placeholder="Tìm Kiếm ở Đây">
+                            <input type="submit" name="" id="" value="tìm kiếm">
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+>>>>>>> 265f23ffb671ea47d1fa75c5572033c037787f27:front_end/shopdoi.php
 
     <!-- Breadcrumb Section Begin -->
     
@@ -36,7 +105,7 @@
                     <div class="breadcrumb__text">
                         <h4>Cửa hàng</h4>
                         <div class="breadcrumb__links">
-                            <a href="./index.html">Trang chủ</a>
+                            <a href="./index.">Trang chủ</a>
                             <span>Cửa hàng</span>
                         </div>
                     </div>
@@ -69,9 +138,9 @@
                                         <div class="card-body">
                                             <div class="shop__sidebar__categories">
                                                 <ul class="nice-scroll">
-                                                    <li><a href="shop.html">Đồng hồ nữ (20)</a></li>
-                                                    <li><a href="shopnam.html">Đồng hồ nam (20)</a></li>
-                                                    <li><a href="shopdoi.html">Đồng hồ đôi (20)</a></li>
+                                                    <li><a href="shop.">Đồng hồ nữ (20)</a></li>
+                                                    <li><a href="shopnam.">Đồng hồ nam (20)</a></li>
+                                                    <li><a href="shopdoi.">Đồng hồ đôi (20)</a></li>
                                                     
                                                 </ul>
                                             </div>
