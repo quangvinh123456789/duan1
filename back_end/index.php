@@ -5,6 +5,7 @@ require_once './admin/header.php';
 require_once './model/pdo.php';
 require_once './model/danhmuc.php';
 require_once './model/sanpham.php';
+require_once './model/taikhoan.php';
 require_once './global.php';
 // include "./global.php";
 
@@ -169,6 +170,23 @@ require_once './global.php';
         case "list_sp": {
                 $list_sp = loadAll_sanpham();
                 include "admin/sanpham/list_sp.php";
+                break;
+            }
+            case "list_tk": {
+                $list_tk = loadall_taikhoan();
+                include "admin/taikhoan/list_tk.php";
+                break;
+            }
+        case "update_tk": {
+                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                    $loadone_tk = loadall_taikhoan("", $_GET['id']);
+                    if (isset($_POST['submit']) && ($_POST['submit'])) {
+                        $role = $_POST['role'];
+                        update_role($_GET['id'], $role);
+                        header('location: index.php?act=list_tk');
+                    }
+                }
+                include 'admin/taikhoan/update_tk.php';
                 break;
             }
     }
