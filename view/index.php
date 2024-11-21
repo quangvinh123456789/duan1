@@ -28,6 +28,12 @@ if (isset($_GET['act'])) {
         case 'lienhe';
         include "./front_end/contact.php";
         break;
+        case 'dangki';
+        include "./front_end/dangki.php";
+        break;
+        case 'dangnhap';
+        include "./front_end/login.php";
+        break;
         default:
         break;
     }
