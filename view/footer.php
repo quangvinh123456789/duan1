@@ -5,7 +5,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="#"><img src="img2/logowweb.webp" alt=""></a>
+                            <a href="#"><img src="./front_end/img2/logowweb.webp" alt=""></a>
                         </div>
                         <p>Khách hàng là trung tâm của mô hình kinh doanh độc đáo của chúng tôi, bao gồm cả thiết kế.</p>
                         <a href="#"><img src="img/payment.png" alt=""></a>
