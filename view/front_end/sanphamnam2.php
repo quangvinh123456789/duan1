@@ -7,7 +7,7 @@
     <meta name="keywords" content="Male_Fashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chi tiết sản phẩm</title>
+    <title>Tissot PRX Powermatic 80 T137.407.11.351.00</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
@@ -25,77 +25,7 @@
 </head>
 
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Offcanvas Menu Begin -->
-    <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-7">
-                        <div class="header__top__left">
-                            <p>Miễn phí vận chuyển, đảm bảo hoàn trả hoặc hoàn tiền trong 30 ngày.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-5">
-                        <div class="header__top__right">
-                            <div class="header__top__links">
-                                <a href="login.html">Đăng nhập</a>
-                                <a href="#">FAQs</a>
-                            </div>
-                            <div class="header__top__hover">
-                                <span>Đồng<i class="arrow_carrot-down"></i></span>
-                                <ul>
-                                    <li>Đồng</li>
-                                    <li>EUR</li>
-                                    <li>Đồng</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img2/logowweb.webp" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <nav class="header__menu mobile-menu">
-                        <ul>
-                            <li><a href="./index.html">Trang chủ</a></li>
-                            <li class="active"><a href="./shop.html">Cửa hàng</a></li>
-                            <li><a href="#">Trang</a>
-                                <ul class="dropdown">
-                                    <li><a href="./about.html">giới thiệu</a></li>
-                                    <li><a href="./shop-details.html">Chi tiết cửa hàng</a></li>
-                                    <li><a href="./shopping-cart.html">Giỏ hàng</a></li>
-                                    <li><a href="./checkout.html">Kiểm tra</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./contact.html">Liên hệ</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div style="display: flex;">
-                    <div class="header__nav__option">
-                            <input name="fsrch" id="fsrch" placeholder="Tìm Kiếm ở Đây">
-                            <input type="submit" name="" id="" value="tìm kiếm">
-                        
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="canvas__open"><i class="fa fa-bars"></i></div>
-        </div>
-    </header>
-    <!-- Header Section End -->
+    
 
     <!-- Shop Details Section Begin -->
     <section class="shop-details">
@@ -115,26 +45,25 @@
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">
-                                    <div class="product__thumb__pic set-bg" data-setbg="https://dong-ho-tissot.com/wp-content/uploads/2019/12/170_T109.410.22.031.00-5-768x768.jpg">
+                                    <div class="product__thumb__pic set-bg" data-setbg="img2/sanpham2.webp">
                                     </div>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">
-                                    <div class="product__thumb__pic set-bg" data-setbg="img2/chitietsanpham1/chitietsanpham1.webp">
+                                    <div class="product__thumb__pic set-bg" data-setbg="img2/chitietsanpham2/ct1.webp">
                                     </div>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">
-                                    <div class="product__thumb__pic set-bg" data-setbg="img2/chitietsanpham1/chitietsanpham2.webp">
+                                    <div class="product__thumb__pic set-bg" data-setbg="img2/chitietsanpham2/ct2.webp">
                                     </div>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">
-                                    <div class="product__thumb__pic set-bg" data-setbg="img2/chitietsanpham1/chitietsanpham3.webp">
-                                        <i class="fa fa-play"></i>
+                                    <div class="product__thumb__pic set-bg" data-setbg="img2/chitietsanpham2/ct3.webp">
                                     </div>
                                 </a>
                             </li>
@@ -144,23 +73,23 @@
                         <div class="tab-content">
                             <div class="tab-pane active" id="tabs-1" role="tabpanel">
                                 <div class="product__details__pic__item">
-                                    <img src="https://dong-ho-tissot.com/wp-content/uploads/2019/12/170_T109.410.22.031.00-5-768x768.jpg" alt="">
+                                    <img src="img2/sanpham2.webp" alt="">
                                 </div>
                             </div>
                             <div class="tab-pane" id="tabs-2" role="tabpanel">
                                 <div class="product__details__pic__item">
-                                    <img src="img2/chitietsanpham1/chitietsanpham1.webp" alt="">
+                                    <img src="img2/chitietsanpham2/ct1.webp" alt="">
                                 </div>
                             </div>
                             <div class="tab-pane" id="tabs-3" role="tabpanel">
                                 <div class="product__details__pic__item">
-                                    <img src="img2/chitietsanpham1/chitietsanpham2.webp" alt="">
+                                    <img src="img2/chitietsanpham2/ct2.webp" alt="">
                                 </div>
                             </div>
                             <div class="tab-pane" id="tabs-4" role="tabpanel">
                                 <div class="product__details__pic__item">
-                                    <img src="img2/chitietsanpham1/chitietsanpham3.webp" alt="">
-                                    <a href="https://www.youtube.com/watch?v=iwRELQaufr4" class="video-popup"><i class="fa fa-play"></i></a>
+                                    <img src="img2/chitietsanpham2/ct3.webp" alt="">
+                                    <a href="https://www.youtube.com/watch?v=2tkTt0XDWmA" class="video-popup"><i class="fa fa-play"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -173,24 +102,27 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-8">
                         <div class="product__details__text">
-                            <h4>Tissot Chemin Des Tourelles T099.407.22.037.00 (T0994072203700)</h4>
+                            <h4>Tissot PRX Powermatic 80 T137.407.11.351.00 (T1374071135100)</h4>
                             <div class="rating">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
                                 <i class="fa fa-star-o"></i>
                                 <span> - 5 Reviews</span>
                             </div>
-                            <h3>Giá: 22.999.000đ<span>26.999.000đ</span></h3>
-                            <p>-Mã Sản Phẩm : T099.407.22.037.00 
-                                -Thương hiệu: Tissot	-Xuất xứ: Thụy Sỹ
-                                -Đối tượng: Nam	Dòng sản phẩm: -Tissot Chemin Des Tourelles
-                                -Kháng nước: 5atm	-Loại máy: Cơ tự động
-                                -Chất liệu kính: -Kính Sapphire	-Chất liệu dây: Dây Kim Loại
-                                -Size mặt: 42mm	-Độ dầy: 10.9mm
-                                -Khoảng trữ cót: 80 tiếng	Bộ máy: Powermatic 80
-                                -Kiểu mặt: Guilloche	-Tiện ích: Lịch ngày, Giờ, phút, giây</p>     
+                            <h3>Giá KM :18.900.000₫<span> 21.000.000₫</span></h3>
+                            <p>Thương hiệu: Tissot 
+                                -Mã sản phẩm: T137.407.11.351.00
+                                -Xuất Xứ: Thụy Sĩ
+                                -Loại máy: Automatic 
+                                -Kính: Kính Sapphire
+                                -Kiểu dáng: Đồng hồ nam
+                                -Đường kính:	40mm
+                                -Chất liệu vỏ: Thép không gỉ 316L 
+                                -Chất liệu dây: Thép không gỉ 316L
+                                -Độ chịu nước: 100M
+                                -Thông tin khác	Kim giờ, phút, giây, dạ quang, lịch ngày</p>     
                             <div class="product__details__option">
                                 <div class="product__details__option__size">
                                     <span>Size:</span>
@@ -273,14 +205,15 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img2/sanpham2.webp">
+                        <div class="product__item__pic set-bg" data-setbg="img2/sanpham1.webp">
                             <span class="label">New</span>
                             <ul class="product__hover">
-                                <li><a href="sanphamnam2.html"><img src="img/icon/search.png" alt=""></a></li>
+                                
+                                <li><a href="shop-details.html"><img src="img/icon/search.png" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
-                            <h6>Đồng hồ nam Tissot PRX Powermatic 80 T137.407.11.351.00</h6>
+                            <h6>Tissot Chemin Des Tourelles T099.407.22.037.00</h6>
                             <a href="#" class="add-cart">+ Thêm vào giỏ hang</a>
                             <div class="rating">
                                 <i class="fa fa-star-o"></i>
@@ -289,7 +222,7 @@
                                 <i class="fa fa-star-o"></i>
                                 <i class="fa fa-star-o"></i>
                             </div>
-                            <h5>18.900.000₫</h5>
+                            <h5>22.999.000đ</h5>
                             <div class="product__color__select">
                                 <label for="pc-1">
                                     <input type="radio" id="pc-1">
@@ -309,7 +242,7 @@
                         <div class="product__item__pic set-bg" data-setbg="img2/sanpham3.webp">
                             <ul class="product__hover">
                                 
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="sanphamnam3.html"><img src="img/icon/search.png" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -409,97 +342,3 @@
     </section>
     <!-- Related Section End -->
 
-    <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="footer__about">
-                        <div class="footer__logo">
-                            <a href="#"><img src="img2/logowweb.webp" alt=""></a>
-                        </div>
-                        <p>Khách hàng là trung tâm của mô hình kinh doanh độc đáo của chúng tôi, bao gồm cả thiết kế.</p>
-                        <a href="#"><img src="img/payment.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
-                    <div class="footer__widget">
-                        <h6>Chăm sóc khách hàng</h6>
-                        <ul>
-                            <li><a href="#">Hướng dẫn mua hàng</a></li>
-                            <li><a href="#">Chính sách đổi trả</a></li>
-                            <li><a href="#">Chính sách bảo hành</a></li>
-                            <li><a href="#">Dịch vụ và sửa chữa</a></li>
-                            <li><a href="#">Hướng dẫn sử dụng đồng hồ</a></li>
-                            <li><a href="#">Chính sách Khách hàng thân thiết</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
-                        <h6>DONGHODUYANH</h6>
-                        <ul>
-                            <li><a href="#">Giới thiệu</a></li>
-                            <li><a href="#">Triết lý kinh doanh</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
-                    <div class="footer__widget">
-                        <h6>Địa chỉ</h6>
-                        <div class="footer__newslatter">
-                            <p>Địa chỉ: 205 Trần Hưng Đạo, phường Cô Giang, Quận 1, TP.Hồ Chí Minh (gần Ngân hàng Vietinbank)
-                                Điện thoại: 0836.88.99.86
-                                Email: duyanhwatch@gmail.com</p>
-                            <form action="#">
-                                <input type="text" placeholder="Your email">
-                                <button type="submit"><span class="icon_mail_alt"></span></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="footer__copyright__text">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p>Copyright ©
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script>2020
-                            All rights reserved | This template is made with <i class="fa fa-heart-o"
-                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        </p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Section End -->
-
-    <!-- Search Begin -->
-    <div class="search-model">
-        <div class="h-100 d-flex align-items-center justify-content-center">
-            <div class="search-close-switch">+</div>
-            <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Search here.....">
-            </form>
-        </div>
-    </div>
-    <!-- Search End -->
-
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-
-</html>
