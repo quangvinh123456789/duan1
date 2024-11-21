@@ -25,7 +25,81 @@
 </head>
 
 <body>
+<<<<<<< HEAD:view/front_end/sanphamnam2.php
     
+=======
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="header__top__left">
+                            <p>Miễn phí vận chuyển, đảm bảo hoàn trả hoặc hoàn tiền trong 30 ngày.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="header__top__right">
+                            <div class="header__top__links">
+                                <a href="login.php">Đăng nhập</a>
+                                <a href="#">FAQs</a>
+                            </div>
+                            <div class="header__top__hover">
+                                <span>Đồng<i class="arrow_carrot-down"></i></span>
+                                <ul>
+                                    <li>Đồng</li>
+                                    <li>EUR</li>
+                                    <li>Đồng</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="./index.php"><img src="img2/logowweb.webp" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li><a href="./index.php">Trang chủ</a></li>
+                            <li class="active"><a href="./shop.php">Cửa hàng</a></li>
+                            <li><a href="#">Trang</a>
+                                <ul class="dropdown">
+                                    <li><a href="./about.php">giới thiệu</a></li>
+                                    <li><a href="./shop-details.php">Chi tiết cửa hàng</a></li>
+                                    <li><a href="./shopping-cart.php">Giỏ hàng</a></li>
+                                    <li><a href="./checkout.php">Kiểm tra</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./contact.php">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div style="display: flex;">
+                    <div class="header__nav__option">
+                            <input name="fsrch" id="fsrch" placeholder="Tìm Kiếm ở Đây">
+                            <input type="submit" name="" id="" value="tìm kiếm">
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+>>>>>>> 265f23ffb671ea47d1fa75c5572033c037787f27:front_end/sanphamnam2.php
 
     <!-- Shop Details Section Begin -->
     <section class="shop-details">
@@ -34,8 +108,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="product__details__breadcrumb">
-                            <a href="./index.html">Trang chủ</a>
-                            <a href="./shop.html">Cửa hàng</a>
+                            <a href="./index.php">Trang chủ</a>
+                            <a href="./shop.php">Cửa hàng</a>
                             <span>Chi tiết sản phẩm</span>
                         </div>
                     </div>
@@ -209,7 +283,7 @@
                             <span class="label">New</span>
                             <ul class="product__hover">
                                 
-                                <li><a href="shop-details.html"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="shop-details.php"><img src="img/icon/search.png" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -242,7 +316,7 @@
                         <div class="product__item__pic set-bg" data-setbg="img2/sanpham3.webp">
                             <ul class="product__hover">
                                 
-                                <li><a href="sanphamnam3.html"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="sanphamnam3.php"><img src="img/icon/search.png" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">

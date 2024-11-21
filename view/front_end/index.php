@@ -35,7 +35,7 @@
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__option">
             <div class="offcanvas__links">
-                <a href="/login.html">Đăng nhập</a>
+                <a href="login.php">Đăng nhập</a>
                 <a href="#">FAQs</a>
             </div>
             <div class="offcanvas__top__hover">
@@ -73,7 +73,7 @@
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
                             <div class="header__top__links">
-                                <a href="/login.html">Đăng nhập</a>
+                                <a href="login.php">Đăng nhập</a>
                                 <a href="#">FAQs</a>
                             </div>
                             <div class="header__top__hover">
@@ -93,23 +93,23 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img2/logowweb.webp" alt=""></a>
+                        <a href="./index.php"><img src="img2/logowweb.webp" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li><a href="./index.html">Trang chủ</a></li>
-                            <li class="active"><a href="./shop.html">Cửa hàng</a></li>
+                            <li><a href="./index.php">Trang chủ</a></li>
+                            <li class="active"><a href="./shop.php">Cửa hàng</a></li>
                             <li><a href="#">Trang</a>
                                 <ul class="dropdown">
-                                    <li><a href="./about.html">giới thiệu</a></li>
-                                    <li><a href="./shop-details.html">Chi tiết cửa hàng</a></li>
-                                    <li><a href="./shopping-cart.html">Giỏ hàng</a></li>
-                                    <li><a href="./checkout.html">Kiểm tra</a></li>
+                                    <li><a href="./about.php">giới thiệu</a></li>
+                                    <li><a href="./shop-details.php">Chi tiết cửa hàng</a></li>
+                                    <li><a href="./shopping-cart.php">Giỏ hàng</a></li>
+                                    <li><a href="./checkout.php">Kiểm tra</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./contact.html">Liên hệ</a></li>
+                            <li><a href="./contact.php">Liên hệ</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -510,7 +510,7 @@
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                 <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="" alt=""></a></li>
+                                <li><a href=""><img src="" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
