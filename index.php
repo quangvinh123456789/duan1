@@ -28,7 +28,7 @@ require_once './model/donhang.php';
 
                         if ($_FILES['img']['name'] != "") {
                             $img = time() . "_" . $_FILES['img']['name'];
-                            move_uploaded_file($_FILES['img']['tmp_name'], "admin/../uploads/img_dm/$img");
+                            move_uploaded_file($_FILES['img']['tmp_name'], "./uploads/img_dm/$img");
                         }
                         insert_dm($name, $img);
                         $thongbao = "Thêm danh mục thành công";
