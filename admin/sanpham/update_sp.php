@@ -106,7 +106,7 @@ if (is_array($loadone_sp)) {
                     <label for="validationCustom03" class="form-label font-weight-bold">Hình ảnh</label>
                     <div class="row mb-2">
                         <div class="col-md-2">
-                            <img width="70" src="../uploads/img_sp/<?= $loadone_sp[0]['img'] ?>" alt="">
+                            <img width="70" src="./uploads/img_sp/<?= $loadone_sp[0]['img'] ?>" alt="">
                         </div>
                         <div class="col-md-10 mt-3">
                             <input name="img" type="file" class="custom-file-input" id="validatedCustomFile">
@@ -115,7 +115,7 @@ if (is_array($loadone_sp)) {
                     </div>
                     <div class="row mb-2">
                         <div class="col-md-2">
-                            <img width="70" src="../uploads/img_sp/<?= $loadone_sp[0]['img2'] ?>" alt="">
+                            <img width="70" src="./uploads/img_sp/<?= $loadone_sp[0]['img2'] ?>" alt="">
                         </div>
                         <div class="col-md-10 mt-3">
                             <input name="img2" type="file" class="custom-file-input" id="validatedCustomFile">
@@ -124,7 +124,7 @@ if (is_array($loadone_sp)) {
                     </div>
                     <div class="row mb-2">
                         <div class="col-md-2">
-                            <img width="70" src="../uploads/img_sp/<?= $loadone_sp[0]['img3'] ?>" alt="">
+                            <img width="70" src="./uploads/img_sp/<?= $loadone_sp[0]['img3'] ?>" alt="">
                         </div>
                         <div class="col-md-10 mt-3">
                             <input name="img3" type="file" class="custom-file-input" id="validatedCustomFile">
