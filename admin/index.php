@@ -5,6 +5,8 @@ include "header.php";
 include "../model/pdo.php";
 include "../model/danhmuc.php";
 include "../model/sanpham.php";
+include "../model/donhang.php";
+include "../model/taikhoan.php";
 include "../global.php";
 // include "./global.php";
 if (isset($_GET['act']) && ($_GET['act'] != "")) {
@@ -22,7 +24,7 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
 
                         if ($_FILES['img']['name'] != "") {
                             $img = time() . "_" . $_FILES['img']['name'];
-                            move_uploaded_file($_FILES['img']['tmp_name'], "../uploads/img_dm/$img");
+                            move_uploaded_file($_FILES['img']['tmp_name'], "./uploads/img_dm/$img");
                         }
                         insert_dm($name, $img);
                         $thongbao = "Thêm danh mục thành công";
@@ -143,18 +145,18 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
         case "delete_sp": {
                 if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                     $loadone_sp = loadAll_sanpham("", $_GET['id']);
-                    // if (isset($loadone_sp[0]['img']) && ($loadone_sp[0]['img'] != "")) {
-                    //     $link = "../uploads/img_sp/" . $loadone_sp[0]['img'];
-                    //     unlink("$link");
-                    // }
-                    // if (isset($loadone_sp[0]['img2']) && ($loadone_sp[0]['img2'] != "")) {
-                    //     $link = "../uploads/img_sp/" . $loadone_sp[0]['img2'];
-                    //     unlink("$link");
-                    // }
-                    // if (isset($loadone_sp[0]['img3']) && ($loadone_sp[0]['img3'] != "")) {
-                    //     $link = "../uploads/img_sp/" . $loadone_sp[0]['img3'];
-                    //     unlink("$link");
-                    // }
+                    if (isset($loadone_sp[0]['img']) && ($loadone_sp[0]['img'] != "")) {
+                        $link = "../uploads/img_sp/" . $loadone_sp[0]['img'];
+                        unlink("$link");
+                    }
+                    if (isset($loadone_sp[0]['img2']) && ($loadone_sp[0]['img2'] != "")) {
+                        $link = "../uploads/img_sp/" . $loadone_sp[0]['img2'];
+                        unlink("$link");
+                    }
+                    if (isset($loadone_sp[0]['img3']) && ($loadone_sp[0]['img3'] != "")) {
+                        $link = "../uploads/img_sp/" . $loadone_sp[0]['img3'];
+                        unlink("$link");
+                    }
                     delete_sp($_GET['id']);
                     header('location: index.php?act=list_sp');
                 }
@@ -165,6 +167,28 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
         case "list_sp": {
                 $list_sp = loadAll_sanpham();
                 include "./sanpham/list_sp.php";
+                break;
+            }
+            case "list_tk": {
+                $list_tk = loadall_taikhoan();
+                include "./taikhoan/list_tk.php";
+                break;
+            }
+        case "update_tk": {
+                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                    $loadone_tk = loadall_taikhoan("", $_GET['id']);
+                    if (isset($_POST['submit']) && ($_POST['submit'])) {
+                        $role = $_POST['role'];
+                        update_role($_GET['id'], $role);
+                        header('location: index.php?act=list_tk');
+                    }
+                }
+                include './taikhoan/update_tk.php';
+                break;
+            }
+            case "list_donhang": {
+                $list_donhang = list_donhang();
+                include "./donhang/list_donhang.php";
                 break;
             }
     }

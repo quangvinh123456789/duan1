@@ -33,26 +33,26 @@
 
 
           <!-- Bootstrap core JavaScript-->
-          <script src="admin/vendor/jquery/jquery.min.js"></script>
-          <script src="admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+          <script src="../admin/vendor/jquery/jquery.min.js"></script>
+          <script src="../admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
           <!-- Core plugin JavaScript-->
-          <script src="admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+          <script src="../admin/vendor/jquery-easing/jquery.easing.min.js"></script>
 
           <!-- Custom scripts for all pages-->
-          <script src="admin/js/sb-admin-2.min.js"></script>
-          <script src="admin/js/sb-admin-2.js"></script>
+          <script src="../admin/js/sb-admin-2.min.js"></script>
+          <script src="../admin/js/sb-admin-2.js"></script>
 
 
           <!-- Page level plugins -->
-          <script src="admin/vendor/chart.js/Chart.min.js"></script>
-          <script src="admin/vendor/datatables/jquery.dataTables.min.js"></script>
-          <script src="admin/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+          <script src="../admin/vendor/chart.js/Chart.min.js"></script>
+          <script src="../admin/vendor/datatables/jquery.dataTables.min.js"></script>
+          <script src="../admin/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
           <!-- Page level custom scripts -->
-          <script src="admin/js/demo/chart-area-demo.js"></script>
-          <script src="admin/js/demo/chart-pie-demo.js"></script>
-          <script src="admin/js/demo/datatables-demo.js"></script>
+          <script src="../admin/js/demo/chart-area-demo.js"></script>
+          <script src="../admin/js/demo/chart-pie-demo.js"></script>
+          <script src="../admin/js/demo/datatables-demo.js"></script>
           <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
           <script src="https://kit.fontawesome.com/83a06a9f9f.js" crossorigin="anonymous"></script>
           <script>
