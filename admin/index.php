@@ -145,18 +145,18 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
         case "delete_sp": {
                 if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                     $loadone_sp = loadAll_sanpham("", $_GET['id']);
-                    // if (isset($loadone_sp[0]['img']) && ($loadone_sp[0]['img'] != "")) {
-                    //     $link = "../uploads/img_sp/" . $loadone_sp[0]['img'];
-                    //     unlink("$link");
-                    // }
-                    // if (isset($loadone_sp[0]['img2']) && ($loadone_sp[0]['img2'] != "")) {
-                    //     $link = "../uploads/img_sp/" . $loadone_sp[0]['img2'];
-                    //     unlink("$link");
-                    // }
-                    // if (isset($loadone_sp[0]['img3']) && ($loadone_sp[0]['img3'] != "")) {
-                    //     $link = "../uploads/img_sp/" . $loadone_sp[0]['img3'];
-                    //     unlink("$link");
-                    // }
+                    if (isset($loadone_sp[0]['img']) && ($loadone_sp[0]['img'] != "")) {
+                        $link = "../uploads/img_sp/" . $loadone_sp[0]['img'];
+                        unlink("$link");
+                    }
+                    if (isset($loadone_sp[0]['img2']) && ($loadone_sp[0]['img2'] != "")) {
+                        $link = "../uploads/img_sp/" . $loadone_sp[0]['img2'];
+                        unlink("$link");
+                    }
+                    if (isset($loadone_sp[0]['img3']) && ($loadone_sp[0]['img3'] != "")) {
+                        $link = "../uploads/img_sp/" . $loadone_sp[0]['img3'];
+                        unlink("$link");
+                    }
                     delete_sp($_GET['id']);
                     header('location: index.php?act=list_sp');
                 }
