@@ -188,7 +188,7 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
             }
             case "list_donhang": {
                 $list_donhang = list_donhang();
-                include "../admin/donhang/list_donhang.php";
+                include "./donhang/list_donhang.php";
                 break;
             }
     }
