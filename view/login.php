@@ -6,13 +6,13 @@
     <title>Đăng nhập</title>
 </head>
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="view/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="view/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="view/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="view/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="view/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="view/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="view/css/style.css" type="text/css">
 </head>
 <body>
 <<<<<<< HEAD:view/front_end/login.php

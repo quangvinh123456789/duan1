@@ -25,7 +25,7 @@
                         <?php foreach ($list_sp as $value) { ?>
                             <tr>
                                 <td><?= $value['name'] ?></td>
-                                <td><img width="100" src="./uploads/img_sp/<?= $value['img'] ?>" alt="123"></td>
+                                <td><img width="100" src="../uploads/img_sp/<?= $value['img'] ?>" alt="123"></td>
                                 <td><?= $value['gia'] ?></td>
                                 <td><?= $value['gia_new'] ?></td>
                                 <td><?= $value['soluong'] ?></td>
