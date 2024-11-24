@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
 <body>
-<<<<<<< HEAD:view/front_end/login.php
-=======
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__option">
@@ -103,8 +101,6 @@
     </header>
     <!-- Header Section End -->
 
-
->>>>>>> 265f23ffb671ea47d1fa75c5572033c037787f27:front_end/login.php
     <!-- Section: Design Block -->
     <form style="margin-top: 20px; width: 60%; margin-left: 350px;">
         <h2 style="text-align: center; margin-top: 50px;" >Đăng Nhập</h2>
@@ -137,15 +133,12 @@
         </div>
       
         <!-- Submit button -->
-<<<<<<< HEAD:view/front_end/login.php
         <a href="index.html"><button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">đăng nhập</button></a>
         
         <!-- Register buttons -->
         <div class="text-center">
           <p>Chưa có tài khoản<a href="dangki.html">Đăng kí</a></p></div>
       </form>
-=======
-        <a href="index.php"><button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">đăng nhập</button></a>
         
         <!-- Register buttons -->
         <div class="text-center">
@@ -229,4 +222,3 @@
   <script src="js/main.js"></script>
 </body>
 </html>
->>>>>>> 265f23ffb671ea47d1fa75c5572033c037787f27:front_end/login.php
