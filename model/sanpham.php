@@ -112,7 +112,6 @@ FROM
     sanpham sp
 LEFT JOIN
     binhluan bl ON sp.id = bl.id_pro
-where sp.trangthai = '0'
 GROUP BY
     sp.id
 ORDER BY
