@@ -162,36 +162,63 @@ if ($result->num_rows > 0) {
                     </ul>
                 </div>
             </div>
-            <?php if (!empty($products)): ?>
-                <?php foreach ($products as $product): ?>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="product__item">
-                            <a href="?act=ctsp&idsp=<?= $product['id'] ?>">
-                                <div class="product__item__pic">
-                                    <img src="./uploads/img_sp/<?= htmlspecialchars($product['img']) ?>" alt="<?= htmlspecialchars($product['name']) ?>" />
+
+            <div class="row product__filter">
+                <?php if (!empty($products)): ?>
+                    <?php foreach ($products as $product): ?>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg">
+                                    <span class="label">New</span>
+                                    <br> <br>
+                                    <img src="./uploads/img_sp/<?= htmlspecialchars($product['img']) ?>" alt="<?= htmlspecialchars($product['name']) ?> " width="230px"/>
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="./uploads/img_sp/heart.png" alt="" width="50px"></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
                                 </div>
-                                <br>
                                 <div class="product__item__text">
                                     <h6><?= htmlspecialchars($product['name']) ?></h6>
-                                    <div class="price">
-                                        <p>
-                                            <span class="text-muted" style="text-decoration: line-through; margin-right: 10px;">
-                                                <?= number_format($product['gia']) ?> ₫
-                                            </span>
-                                            <span class="text-danger font-weight-bold">
-                                                <?= number_format($product['gia_new']) ?> ₫
-                                            </span>
-                                        </p>
+                                    <a href="#" class="add-cart">+ Add To Cart</a>
+                                    <div class="rating">
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
                                     </div>
-
+                                    <h5>
+                                        <div class="price">
+                                            <p>
+                                                <span class="text-muted" style="text-decoration: line-through; margin-right: 10px;">
+                                                    <?= number_format($product['gia']) ?> ₫
+                                                </span>
+                                                <span class="text-danger font-weight-bold">
+                                                    <?= number_format($product['gia_new']) ?> ₫
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </h5>
+                                    <!-- <div class="product__color__select">
+                                        <label for="pc-1">
+                                            <input type="radio" id="pc-1">
+                                        </label>
+                                        <label class="active black" for="pc-2">
+                                            <input type="radio" id="pc-2">
+                                        </label>
+                                        <label class="grey" for="pc-3">
+                                            <input type="radio" id="pc-3">
+                                        </label>
+                                    </div> -->
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                    </div>
-                <?php endforeach; ?>
-            <?php else: ?>
-                <p>Hiện không có sản phẩm nào để hiển thị.</p>
-            <?php endif; ?>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <p>Hiện không có sản phẩm nào để hiển thị.</p>
+                <?php endif; ?>
+            </div>
         </div>
     </section>
     <!-- Product Section End -->

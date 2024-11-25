@@ -17,8 +17,6 @@ include 'model/validate_pass.php';
 $loadstar = loadstar();
 $load_sp_luot_xem = load_sp_luotxem();
 // $list_sp_home = loadAll_sanpham();
-$list_dm = loadAll_danhmuc();
-$load_sp_star = load_sp_star();
 
 if (isset($_GET['act']) && $_GET['act'] != '') {
     $act = $_GET['act'];
@@ -41,35 +39,6 @@ if (isset($_GET['act']) && $_GET['act'] != '') {
             // $starss =  thong_ke_star($_GET['idsp']);
             // var_dump($starss);
             include_once 'view/ctsp.php';
-            break;
-        case 'ctdh':
-            // $load_not_vote = load_sp_chua_danh_gia($_SESSION['iduser'], $_GET['id_dh']);
-            $_SESSION['mang'] = [];
-            if (isset($_POST['submit']) && $_POST['submit']) {
-                $mang = $_SESSION['mang'];
-
-                // Loop through posted data and store in session array
-                for ($i = 1; $i <= count($load_not_vote); $i++) {
-                    $id = isset($_POST['id_sp' . $i]) ? $_POST['id_sp' . $i] : null;
-                    $binhluan = $_POST['binhluan' . $i];
-                    $rating = isset($_POST['star-rating' . $i]) ? $_POST['star-rating' . $i] : 5;
-
-                    // Check if the comment is not empty before adding to the array
-                    if (!empty($binhluan)) {
-                        $mang[] = ['id' => $id, 'binhluan' => $binhluan, 'rating' => $rating];
-                    }
-                }
-
-                $_SESSION['mang'] = $mang;
-                for ($j = 0; $j < count($mang); $j++) {
-                    // insert_bl($_SESSION['iduser'], $mang[$j]['id'], $mang[$j]['binhluan'], $mang[$j]['rating']);
-                    unset($_SESSION['mang']);
-                }
-                header('location: ' . $_SERVER['PHP_SELF'] . '?act=ctdh&id_dh=' . $_GET['id_dh']);
-            }
-
-            // $ctdh =  loadone_chitietdonhang($_GET['id_dh']);
-            include_once 'view/ctdh.php';
             break;
         case 'listsp':
             if (isset($_POST['submit']) && $_POST['submit']) {
@@ -110,61 +79,6 @@ if (isset($_GET['act']) && $_GET['act'] != '') {
             }
             $listsp_dm = listsp_dm($key, $iddm, $gia, $kieumay, $xuatxu);
             include_once 'view/listsp.php';
-            break;
-        case 'addtocart':
-            if (isset($_SESSION['user'])) {
-                $found = false;
-                // $loadAll_cart = loadAll_cart($_SESSION['iduser']);
-                if (isset($_POST['btn']) && $_POST['btn']) {
-                    $idsp = $_GET['idsp'];
-                    $iduser = $_SESSION['iduser'];
-                    $them = 0;
-                    foreach ($loadAll_cart as &$value) {
-                        if ($value['idsp'] == $idsp) {
-                            $found = true;
-                            if (isset($_POST['soluong']) && $_POST['soluong'] > 0) {
-                                $them = $value['soluong'] + $_POST['soluong'];
-                            }
-                            // update_sl($_SESSION['iduser'], $idsp, $them);
-                            break; // Exit the loop after updating the quantity
-                        }
-                    }
-                    if (!$found) {
-                        if (isset($_POST['soluong'])) {
-                            $soluong = $_POST['soluong'];
-                        } else {
-                            $soluong = 1;
-                        }
-                        // insert_cart($iduser, $idsp, $soluong);
-                    }
-                    // $_SESSION['count_cart'] = count(count_cart($_SESSION['iduser']));
-                    header('Location: ' . $_SERVER['REQUEST_URI']);
-                }
-                if (isset($_POST['btn_delete']) && $_POST['btn_delete']) {
-                    // delete_cart($_GET['idcart']);
-                    // $_SESSION['count_cart'] = count(count_cart($_SESSION['iduser']));
-
-                    header('Location: ' . $_SERVER['REQUEST_URI']);
-                }
-                if (isset($_POST['btn_giam']) && $_POST['btn_giam']) {
-                    // update_soluong($_SESSION['iduser'], $_GET['idcart'], $giam = "a", $tang = "");
-                    header("Location: ?act=addtocart");
-                    exit();
-                }
-                if (isset($_POST['btn_tang']) && $_POST['btn_tang']) {
-                    // update_soluong($_SESSION['iduser'], $_GET['idcart'], $giam = "", $tang = "a");
-                    header("Location: ?act=addtocart");
-                    exit();
-                }
-                // $loadAll_cart = loadAll_cart($_SESSION['iduser']);
-            } else {
-                header('Location: view/taikhoan/dangnhap.php?act=dangnhap');
-                exit();
-            }
-            include_once 'view/cart/viewcart.php';
-            break;
-        case 'thanhtoantc':
-            include 'view/cart/thanhtoantc.php';
             break;
         case 'update_trangthai':
             // update_trangthai($_GET['id_dh']);
