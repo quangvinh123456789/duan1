@@ -8,6 +8,7 @@ include 'model/taikhoan.php';
 if (isset($_SESSION['iduser'])) {
     $tk =  selectone_tk($_SESSION['iduser']);
 }
+include './view/header.php';
 include './view/home.php';
 include './model/validate_form.php';
 include './model/validate_pass.php';    
