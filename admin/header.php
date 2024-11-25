@@ -236,11 +236,10 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-<<<<<<< HEAD
                                         <img class="rounded-circle" src="../admin/img/undraw_profile_1.svg" alt="...">
-=======
+
                                         <img class="rounded-circle" src="../admin/img/undraw_profile_1.svg" alt="...">
->>>>>>> 265f23ffb671ea47d1fa75c5572033c037787f27
+
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -251,11 +250,11 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-<<<<<<< HEAD
+
                                         <img class="rounded-circle" src="../admin/img/undraw_profile_2.svg" alt="...">
-=======
+
                                         <img class="rounded-circle" src="../admin/img/undraw_profile_2.svg" alt="...">
->>>>>>> 265f23ffb671ea47d1fa75c5572033c037787f27
+
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>

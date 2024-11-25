@@ -54,7 +54,7 @@ if ($result->num_rows > 0) {
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__option">
             <div class="offcanvas__links">
-                <a href="login.php">Đăng nhập</a>
+                <a href="./view/login.php">Đăng nhập</a>
                 <a href="#">FAQs</a>
             </div>
         </div>
@@ -81,7 +81,7 @@ if ($result->num_rows > 0) {
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
                             <div class="header__top__links">
-                                <a href="login.php">Đăng nhập</a>
+                                <a href="./view/login.php">Đăng nhập</a>
                                 <a href="#">FAQs</a>
                             </div>
                         </div>

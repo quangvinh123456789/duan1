@@ -1,23 +1,4 @@
 <?php
-function loadAll_sanpham($key = "", $idsp = 0)
-{
-    $sql = "SELECT * FROM sanpham WHERE 1"; // WHERE 1 là điều kiện mặc định để thêm các điều kiện khác
-    $params = [];
-
-    if ($key != "") {
-        $sql .= " AND name = :key";
-        $params[':key'] = $key;
-    }
-
-    if ($idsp > 0) {
-        $sql .= " AND id = :idsp";
-        $params[':idsp'] = $idsp;
-    }
-
-    $sql .= " ORDER BY id DESC";
-    return pdo_query($sql, $params);
-}
-
 //-------------------ADMIN------------------//
 function insert_sp($iddm, $name, $img, $img2, $img3, $gia, $gia_new, $mota, $soluong, $xuatxu, $kieumay)
 {
@@ -50,5 +31,3 @@ function update_sp($id, $iddm, $name, $img, $img2, $img3, $gia, $gia_new, $mota,
         WHERE `id` = $id";
     pdo_execute($sql);
 }
-
-

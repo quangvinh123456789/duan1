@@ -1,17 +1,4 @@
 <?php
-function loadAll_danhmuc($key = "", $iddm = 0)
-{
-    $sql = "SELECT * FROM danhmuc";
-    if ($key != "") {
-        $sql .= " WHERE name = '$key'";
-    }
-    if ($iddm > 0) {
-        $sql .= " WHERE id = $iddm";
-    }
-    return pdo_query($sql);
-}
-
-
 //-----------ADMIN---------------//
 function insert_dm($name, $img)
 {
