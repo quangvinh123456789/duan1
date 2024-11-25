@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập</title>
+    <title>Đăng kí</title>
 </head>
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-<<<<<<< HEAD:view/front_end/dangki.php
-=======
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__option">
@@ -110,8 +108,6 @@
         </div>
     </header>
     <!-- Header Section End -->
->>>>>>> 265f23ffb671ea47d1fa75c5572033c037787f27:front_end/dangki.php
-
     <!-- Hero Section Begin -->
     <section class="hero">
         <div class="hero__slider owl-carousel">
@@ -140,53 +136,36 @@
     </section>
     <!-- Section: Design Block -->
     <form style="margin-top: 20px; width: 60%; margin-left: 350px;">
-        <h2 style="text-align: center; margin-top: 50px;" >Đăng Nhập</h2>
+        <h2 style="text-align: center; margin-top: 50px;" >Đăng kí</h2>
         <!--  -->
         <div data-mdb-input-init class="form-outline mb-4">
-            <input type="password" id="form2Example2" class="form-control" />
-            <label class="form-label" for="form2Example2">Nhập số điện thoại</label>
+            <label class="form-label" for="form2Example2">Tên đăng nhập</label>
+            <input type="text" id="form2Example2" class="form-control" /><?= (isset($error['user'])) ?  $error['user'] : '' ?>
           </div>
         <!-- Email input -->
         <div data-mdb-input-init class="form-outline mb-4"   >
-          <input type="email" id="form2Example1" class="form-control"/>
-          <label class="form-label" for="form2Example1">Địa chỉ email</label>
+            <label class="form-label" for="form2Example1">Email</label>
+          <input type="email" id="form2Example1" class="form-control"/><?= (isset($error['email'])) ?  $error['email']  : '' ?>
         </div>
       
         <!-- Password input -->
         <div data-mdb-input-init class="form-outline mb-4">
-          <input type="password" id="form2Example2" class="form-control" />
-          <label class="form-label" for="form2Example2">Mật khẩu</label>
+            <label class="form-label" for="form2Example2">Mật khẩu</label>
+          <input type="password" id="form2Example2" class="form-control" /><?= (isset($error['pass'])) ?  $error['pass']  : '' ?>
         </div>
         <!--  -->
         <div data-mdb-input-init class="form-outline mb-4">
-            <input type="password" id="form2Example2" class="form-control" />
             <label class="form-label" for="form2Example2">Nhập lại Mật khẩu</label>
+            <input type="password" id="form2Example2" class="form-control" /><?= (isset($error['confirmPass'])) ?  $error['confirmPass']  : '' ?>
           </div>
-        <!-- 2 column grid layout for inline styling -->
-        <div class="row mb-4">
-          <div class="col d-flex justify-content-center">
-            <!-- Checkbox -->
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-              <label class="form-check-label" for="form2Example31"> Lưu mật khẩu </label>
-            </div>
-          </div>
-      
-          <div class="col">
-            <!-- Simple link -->
-            <a href="#!">Quên mật khẩu</a>
-          </div>
-        </div>
-      
-        <!-- Submit button -->
-<<<<<<< HEAD:view/front_end/dangki.php
-        <a href="login.html"><button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">đăng nhập</button></a>
-        <!-- Register buttons -->
-      </form>
-=======
-        <a href="login.php"><button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">đăng nhập</button></a>
-        <!-- Register buttons -->
-      </form>
+          <div class="forget mt">
+                        <label><input type="checkbox"> Ghi nhớ mật khẩu</label>
+                    </div>
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <button name="btn" type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4" value="dangky">Đăng ký</button>
+                        <span>Bạn đã có tài khoản? <a href="dangnhap.php?act=dangnhap">Đăng nhập</a></span>
+                     </div>
+    </form>
   <footer class="footer">
     <div class="container">
         <div class="row">
@@ -266,4 +245,4 @@
   <script src="js/main.js"></script>
 </body>
 </html>
->>>>>>> 265f23ffb671ea47d1fa75c5572033c037787f27:front_end/dangki.php
+

@@ -1,3 +1,9 @@
+<?php
+include '../model/pdo.php';
+include '../model/taikhoan.php';
+include '../model/validate.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -133,11 +139,11 @@
         </div>
       
         <!-- Submit button -->
-        <a href="index.html"><button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">đăng nhập</button></a>
+        <a href="http://localhost/duan1/"><button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">đăng nhập</button></a>
         
         <!-- Register buttons -->
         <div class="text-center">
-          <p>Chưa có tài khoản<a href="dangki.html">Đăng kí</a></p></div>
+          <p>Chưa có tài khoản<a href="./dangki.php">Đăng kí</a></p></div>
       </form>
         
         <!-- Register buttons -->

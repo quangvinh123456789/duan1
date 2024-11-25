@@ -320,18 +320,18 @@ if (isset($_GET['act']) && $_GET['act'] != '') {
             }
             include 'view/cart/thanhtoan.php';
             break;
-        case 'mytaikhoan':
-            if (isset($_POST['btn_tt']) && $_POST['btn_tt']) {
-                $user = $_POST['user'];
-                $email = $_POST['email'];
-                $sdt = $_POST['sdt'];
-                $address = $_POST['diachi'];
-                $err = validate_form($user, $email, $sdt, $address);
-                if (empty($err)) {
-                    update_taikhoan($_SESSION['iduser'], $user, $email, $sdt, $address);
-                    header("Location: index.php?act=mytaikhoan");
-                }
-            }
+        // case 'mytaikhoan':
+        //     if (isset($_POST['btn_tt']) && $_POST['btn_tt']) {
+        //         $user = $_POST['user'];
+        //         $email = $_POST['email'];
+        //         $sdt = $_POST['sdt'];
+        //         $address = $_POST['diachi'];
+        //         $err = validate_form($user, $email, $sdt, $address);
+        //         if (empty($err)) {
+        //             update_taikhoan($_SESSION['iduser'], $user, $email, $sdt, $address);
+        //             header("Location: index.php?act=mytaikhoan");
+        //         }
+        //     }
             if (isset($_POST['btn_update_pass']) && $_POST['btn_update_pass']) {
                 $pass = $_POST['pass'];
                 $captcha = $_POST['captcha'];
