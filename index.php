@@ -14,8 +14,7 @@ include 'model/validate_pass.php';
 
 
 
-$loadstar = loadstar();
-$load_sp_luot_xem = load_sp_luotxem();
+
 // $list_sp_home = loadAll_sanpham();
 
 if (isset($_GET['act']) && $_GET['act'] != '') {
@@ -35,7 +34,7 @@ if (isset($_GET['act']) && $_GET['act'] != '') {
         case 'ctsp':
             // $loadbl_sp = load_bl_sp($_GET['idsp']);
             $loadone_sp = loadAll_sanpham("", $_GET['idsp']);
-            $load_sp_cl = load_sp_cung_loai($_GET['idsp'], $_GET['iddm']);
+
             // $starss =  thong_ke_star($_GET['idsp']);
             // var_dump($starss);
             include_once 'view/ctsp.php';
@@ -77,7 +76,7 @@ if (isset($_GET['act']) && $_GET['act'] != '') {
             } else {
                 $iddm = 0;
             }
-            $listsp_dm = listsp_dm($key, $iddm, $gia, $kieumay, $xuatxu);
+            
             include_once 'view/listsp.php';
             break;
         case 'update_trangthai':
