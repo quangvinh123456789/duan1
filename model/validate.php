@@ -13,9 +13,7 @@ function validate($user, $pass, $email, $confirmPass)
         $error["user"] = "Tên phải lớn hơn 6 ký tự!";
     } elseif (strlen($user) > 15) {
         $error["user"] = "Tên phải nhỏ hơn 15 ký tự!";
-    } elseif ($_GET['act'] == 'dangky' && $checkuser == true) {
-        $error["user"] = "Tên đã tồn tại!";
-    }
+    } 
 
 
     // Validate pass
@@ -30,8 +28,8 @@ function validate($user, $pass, $email, $confirmPass)
         $error["email"] = "Email không được để trống!";
     } elseif (!preg_match("/^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i", $email)) {
         $error["email"] = "Email không đúng định dạng!";
-    } elseif ($checkemail == true) {
-        $error['email'] = 'Email đã tồn tại!';
+    }elseif ($checkemail == "true") {
+        $error["email"] = 'Email đã tồn tại!';
     }
 
 
@@ -60,7 +58,7 @@ if (isset($_POST['btn']) && $_POST['btn']) {
 
     if (empty($error)) {
         if ($_GET['act'] == 'dangnhap') {
-            $dangnhap = checkuser($user, $pass);
+            $dangnhap = checkuser($user, md5($pass));
             if (!is_array($dangnhap)) {
                 $err =  'Tài khoản hoặc mật khẩu không đúng';
             } else {
@@ -74,12 +72,12 @@ if (isset($_POST['btn']) && $_POST['btn']) {
                     } else {
                         $_SESSION['email'] = $dangnhap['email'];
                         $_SESSION['pass'] = $dangnhap['pass'];
-                        header('location: ../../index.php');
+                        header('location: ../index.php');
                     }
                 }
             }
         } elseif ($_GET['act'] == 'dangky') {
-            insert_taikhoan($user, $email, $pass, 0);
+            insert_taikhoan($user, $email, md5($pass), 0);
             header('Location: dangnhap.php?act=dangnhap');
         }
     }

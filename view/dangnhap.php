@@ -60,14 +60,6 @@ include '../model/validate.php';
                             <p>Miễn phí vận chuyển, đảm bảo hoàn trả hoặc hoàn tiền trong 30 ngày.</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-5">
-                        <div class="header__top__right">
-                            <div class="header__top__links">
-                                <a href="#">Đăng nhập</a>
-                                <a href="#">FAQs</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -108,18 +100,18 @@ include '../model/validate.php';
     <!-- Header Section End -->
 
     <!-- Section: Design Block -->
-    <form style="margin-top: 20px; width: 60%; margin-left: 350px;">
+    <form style="margin-top: 20px; width: 60%; margin-left: 350px;" action="?act=dangnhap" method="post">
         <h2 style="text-align: center; margin-top: 50px;" >Đăng Nhập</h2>
         <!-- Email input -->
         <div data-mdb-input-init class="form-outline mb-4"   >
-          <input type="email" id="form2Example1" class="form-control"/>
-          <label class="form-label" for="form2Example1">Địa chỉ email</label>
+            <label class="form-label" for="form2Example1">Tên đăng nhập</label>
+          <input type="text" id="form2Example1" class="form-control" class="error" name="user"/><?= (isset($error['user'])) ?  $error['user']  : '' ?>
         </div>
       
         <!-- Password input -->
         <div data-mdb-input-init class="form-outline mb-4">
-          <input type="password" id="form2Example2" class="form-control" />
-          <label class="form-label" for="form2Example2">Mật khẩu</label>
+            <label class="form-label" for="form2Example2">Mật khẩu</label>
+          <input type="password" id="form2Example2" class="form-control" class="error" name="pass" /><?= (isset($error['pass'])) ?  $error['pass']  : '' ?>
         </div>
       
         <!-- 2 column grid layout for inline styling -->
@@ -139,11 +131,12 @@ include '../model/validate.php';
         </div>
       
         <!-- Submit button -->
-        <a href="http://localhost/duan1/"><button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">đăng nhập</button></a>
+        <button name="btn" value="dangnhap" data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4">Đăng nhập</button>
+                        <small style="color: red;"> <?= (isset($err)) ?  $err . '<br>'  : '' ?></small>
         
         <!-- Register buttons -->
         <div class="text-center">
-          <p>Chưa có tài khoản<a href="./dangki.php">Đăng kí</a></p></div>
+          <p>Chưa có tài khoản<a href="./dangky.php">Đăng ký</a></p></div>
       </form>
         
         <!-- Register buttons -->
