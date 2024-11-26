@@ -24,7 +24,7 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
 
                         if ($_FILES['img']['name'] != "") {
                             $img = time() . "_" . $_FILES['img']['name'];
-                            move_uploaded_file($_FILES['img']['tmp_name'], "./uploads/img_dm/$img");
+                            move_uploaded_file($_FILES['img']['tmp_name'], "../uploads/img_dm/$img");
                         }
                         insert_dm($name, $img);
                         $thongbao = "Thêm danh mục thành công";
@@ -169,7 +169,7 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
                 include "./sanpham/list_sp.php";
                 break;
             }
-            case "list_tk": {
+        case "list_tk": {
                 $list_tk = loadall_taikhoan();
                 include "./taikhoan/list_tk.php";
                 break;
@@ -186,14 +186,9 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
                 include './taikhoan/update_tk.php';
                 break;
             }
-            case "list_donhang": {
+        case "list_donhang": {
                 $list_donhang = list_donhang();
                 include "./donhang/list_donhang.php";
-                break;
-            }
-            case "binhluan": {
-                $list_binhluan = list_binhluan();
-                include './Binhluan/list.php';
                 break;
             }
     }

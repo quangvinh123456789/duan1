@@ -10,8 +10,6 @@ function loadAll_danhmuc($key = "", $iddm = 0)
     }
     return pdo_query($sql);
 }
-
-
 //-----------ADMIN---------------//
 function insert_dm($name, $img)
 {
@@ -37,29 +35,4 @@ function update_dm($id, $name, $img)
         `name`='$name' WHERE `id`='$id'";
     }
     pdo_execute($sql);
-}
-function load_sp_cung_loai($idsp, $iddm)
-{
-    $sql = "SELECT
-    sp.id,
-    sp.name,
-    sp.img,
-    sp.gia,
-    sp.gia_new,
-    sp.mota,
-    sp.soluong,
-    sp.xuatxu,
-    sp.kieumay,
-    sp.iddm,
-    IFNULL(AVG(bl.star), 0) AS avg_star
-FROM
-    sanpham sp
-LEFT JOIN
-    binhluan bl ON sp.id = bl.id_pro
-    WHERE sp.iddm = $iddm AND sp.id != $idsp
-GROUP BY
-    sp.id
-ORDER BY
-    sp.id limit 0,5";
-    return pdo_query($sql);
 }

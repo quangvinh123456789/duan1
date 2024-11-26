@@ -236,11 +236,10 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-<<<<<<< HEAD
                                         <img class="rounded-circle" src="../admin/img/undraw_profile_1.svg" alt="...">
-=======
+
                                         <img class="rounded-circle" src="../admin/img/undraw_profile_1.svg" alt="...">
->>>>>>> 265f23ffb671ea47d1fa75c5572033c037787f27
+
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -251,11 +250,11 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-<<<<<<< HEAD
+
                                         <img class="rounded-circle" src="../admin/img/undraw_profile_2.svg" alt="...">
-=======
+
                                         <img class="rounded-circle" src="../admin/img/undraw_profile_2.svg" alt="...">
->>>>>>> 265f23ffb671ea47d1fa75c5572033c037787f27
+
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -296,11 +295,11 @@
                         <li class="nav-item dropdown no-arrow mr-3">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php 
-                                // if(isset($_SESSION['user']) && $_SESSION['role'] == 1) {
-                                //     echo strtoupper($_SESSION['user']);
-                                // }else{
-                                //     header('location:../index.php');
-                                // }
+                                if(isset($_SESSION['user']) && $_SESSION['role'] == 1) {
+                                    echo strtoupper($_SESSION['user']);
+                                }else{
+                                    header('location:../index.php');
+                                }
                                 ?></span>
                                 <img class="img-profile rounded-circle" src="../admin/img/undraw_profile.svg">
                             </a>

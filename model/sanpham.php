@@ -2,66 +2,17 @@
 function loadAll_sanpham($key = "", $idsp = 0)
 {
     $sql = "SELECT * FROM sanpham WHERE 1"; // WHERE 1 là điều kiện mặc định để thêm các điều kiện khác
-    $params = [];
 
     if ($key != "") {
-        $sql .= " AND name = :key";
-        $params[':key'] = $key;
+        $sql .= " AND name = '$key'";
     }
-
     if ($idsp > 0) {
-        $sql .= " AND id = :idsp";
-        $params[':idsp'] = $idsp;
+        $sql .= " AND id = $idsp";
     }
 
-    $sql .= " ORDER BY id DESC";
-    return pdo_query($sql, $params);
-}
-
-function listsp_dm($key = "", $iddm = 0, $gia = "", $kieumay = "", $xuatxu = "")
-{
-    $sql = "SELECT
-    sp.*,
-    IFNULL(AVG(bl.star), 0) AS avg_star
-FROM
-    sanpham sp
-LEFT JOIN
-    binhluan bl ON sp.id = bl.id_pro WHERE 1 and sp.trangthai = 0";
-
-    if ($gia != "" && $kieumay != "" && $xuatxu != "") {
-        $sql .= " AND gia_new BETWEEN $gia AND kieumay = '$kieumay' AND xuatxu = '$xuatxu'";
-    }
-    if ($kieumay != "" && $xuatxu != "") {
-        $sql .= " AND kieumay = '$kieumay' AND xuatxu = '$xuatxu'";
-    }
-    if ($xuatxu != "") {
-        $sql .= " AND xuatxu = '$xuatxu'";
-    }
-    if ($kieumay != "") {
-        $sql .= " AND kieumay = '$kieumay'";
-    }
-    if ($gia != "") {
-        $sql .= " AND gia_new BETWEEN $gia";
-    }
-    if ($key != "") {
-        $sql .= " AND name LIKE '%$key%'";
-    }
-    if ($iddm > 0) {
-        $sql .= " AND iddm = $iddm";
-    }
-    if ($key != "" && $gia != "" && $kieumay != "" && $xuatxu != "") {
-        $sql = "AND name LIKE '%$key%' AND  gia_new BETWEEN $gia AND kieumay = '$kieumay' AND xuatxu = '$xuatxu'";
-    }
-
-    $sql .= " GROUP BY
-sp.id
-ORDER BY
-sp.id";
+    $sql .= " ORDER BY id DESC"; // Sắp xếp kết quả theo id giảm dần
     return pdo_query($sql);
 }
-
-
-
 //-------------------ADMIN------------------//
 function insert_sp($iddm, $name, $img, $img2, $img3, $gia, $gia_new, $mota, $soluong, $xuatxu, $kieumay)
 {
@@ -112,6 +63,7 @@ FROM
     sanpham sp
 LEFT JOIN
     binhluan bl ON sp.id = bl.id_pro
+where sp.trangthai = '0'
 GROUP BY
     sp.id
 ORDER BY
