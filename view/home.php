@@ -45,7 +45,9 @@
                                 <div class="product__item__pic set-bg">
                                     <span class="label">New</span>
                                     <br> <br>
+                                    <a href="index.php?act=chitietsanpham">
                                     <img src="./uploads/img_sp/<?= htmlspecialchars($product['img']) ?>" alt="<?= htmlspecialchars($product['name']) ?> " width="230px" />
+                                    </a>
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="./uploads/img_sp/heart.png" alt="" width="50px"></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
