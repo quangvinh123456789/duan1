@@ -8,22 +8,10 @@ include 'model/taikhoan.php';
 if (isset($_SESSION['iduser'])) {
     $tk =  selectone_tk($_SESSION['iduser']);
 }
-<<<<<<< HEAD
-=======
 include './view/header.php';
->>>>>>> 40f0979a1c20c42ae2c7566c72dd75723049ffef
-include './view/home.php';
 include 'model/validate_form.php';
 include 'model/validate_pass.php';
 
-
-
-<<<<<<< HEAD
-$loadstar = loadstar();
-$load_sp_luot_xem = load_sp_luotxem();
-=======
-
->>>>>>> 40f0979a1c20c42ae2c7566c72dd75723049ffef
 // $list_sp_home = loadAll_sanpham();
 
 if (isset($_GET['act']) && $_GET['act'] != '') {
@@ -36,23 +24,15 @@ if (isset($_GET['act']) && $_GET['act'] != '') {
         case 'quenmk':
             if (isset($_POST['guiemail'])) {
                 $email = $_POST['email'];
-<<<<<<< HEAD
-                $sendMailMess = sendMail($email);
-=======
                 // $sendMailMess = sendMail($email);
->>>>>>> 40f0979a1c20c42ae2c7566c72dd75723049ffef
             }
             include_once 'view/taikhoan/quenmk.php';
             break;
         case 'ctsp':
             // $loadbl_sp = load_bl_sp($_GET['idsp']);
             $loadone_sp = loadAll_sanpham("", $_GET['idsp']);
-<<<<<<< HEAD
-            $load_sp_cl = load_sp_cung_loai($_GET['idsp'], $_GET['iddm']);
-=======
 
 
->>>>>>> 40f0979a1c20c42ae2c7566c72dd75723049ffef
             // $starss =  thong_ke_star($_GET['idsp']);
             // var_dump($starss);
             include_once 'view/ctsp.php';
@@ -94,19 +74,35 @@ if (isset($_GET['act']) && $_GET['act'] != '') {
             } else {
                 $iddm = 0;
             }
-<<<<<<< HEAD
-            $listsp_dm = listsp_dm($key, $iddm, $gia, $kieumay, $xuatxu);
-=======
             
->>>>>>> 40f0979a1c20c42ae2c7566c72dd75723049ffef
             include_once 'view/listsp.php';
             break;
         case 'update_trangthai':
             // update_trangthai($_GET['id_dh']);
             header('Location: ?act=mytaikhoan');
             break;
-        case 'mytaikhoan':
+        
+        case 'chitietsanpham':{
+            include './view/shop-details.php';
+            break;
+        }
+        case 'home':{
+            include './view/home.php';
+            break;
+        }
+        case 'giohang':{
+            include './view/shopping-cart.php';
+            break;
+        }
+        default:{
+            header('location:index.php?act=home');
+        }
+        break;
     }
 }
+else {
+    header('location:index.php?act=home');
+}
+
 include 'view/footer.php';
 ob_end_flush();
