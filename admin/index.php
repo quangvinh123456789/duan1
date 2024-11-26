@@ -6,7 +6,7 @@ include "../model/pdo.php";
 include "../model/danhmuc.php";
 include "../model/sanpham.php";
 include "../model/donhang.php";
-include "../model/taikhoan.php";
+include "../model/binhluan.php";
 include "../global.php";
 // include "./global.php";
 if (isset($_GET['act']) && ($_GET['act'] != "")) {
@@ -189,6 +189,11 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
             case "list_donhang": {
                 $list_donhang = list_donhang();
                 include "./donhang/list_donhang.php";
+                break;
+            }
+            case "binhluan": {
+                $list_binhluan = list_binhluan();
+                include './Binhluan/list.php';
                 break;
             }
     }
