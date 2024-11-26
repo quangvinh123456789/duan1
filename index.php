@@ -8,6 +8,7 @@ include 'model/taikhoan.php';
 if (isset($_SESSION['iduser'])) {
     $tk =  selectone_tk($_SESSION['iduser']);
 }
+include './view/header.php';
 include './view/home.php';
 include 'model/validate_form.php';
 include 'model/validate_pass.php';
@@ -27,13 +28,14 @@ if (isset($_GET['act']) && $_GET['act'] != '') {
         case 'quenmk':
             if (isset($_POST['guiemail'])) {
                 $email = $_POST['email'];
-                $sendMailMess = sendMail($email);
+                // $sendMailMess = sendMail($email);
             }
             include_once 'view/taikhoan/quenmk.php';
             break;
         case 'ctsp':
             // $loadbl_sp = load_bl_sp($_GET['idsp']);
             $loadone_sp = loadAll_sanpham("", $_GET['idsp']);
+
 
             // $starss =  thong_ke_star($_GET['idsp']);
             // var_dump($starss);

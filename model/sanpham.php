@@ -1,4 +1,18 @@
 <?php
+function loadAll_sanpham($key = "", $idsp = 0)
+{
+    $sql = "SELECT * FROM sanpham WHERE 1"; // WHERE 1 là điều kiện mặc định để thêm các điều kiện khác
+
+    if ($key != "") {
+        $sql .= " AND name = '$key'";
+    }
+    if ($idsp > 0) {
+        $sql .= " AND id = $idsp";
+    }
+
+    $sql .= " ORDER BY id DESC"; // Sắp xếp kết quả theo id giảm dần
+    return pdo_query($sql);
+}
 //-------------------ADMIN------------------//
 function insert_sp($iddm, $name, $img, $img2, $img3, $gia, $gia_new, $mota, $soluong, $xuatxu, $kieumay)
 {
