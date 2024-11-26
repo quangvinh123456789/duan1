@@ -108,10 +108,10 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="categories__hot__deal">
-                        <img src="img2/sanpham_sale.png" alt="">
+                        <img src="./view/img2/sanpham_sale.png" alt="">
                         <div class="hot__deal__sticker">
-                            <span>Sale Of</span>
-                            <h5>$29.99</h5>
+                            <span>Sale</span>
+                            <h5 style="font-size: 15px;">29.990.000đ</h5>
                         </div>
                     </div>
                 </div>
@@ -149,11 +149,4 @@
     <!-- Instagram Section End -->
 
     <!-- Latest Blog Section Begin -->
-    <section class="productspad1">
-        <div class="container">
-            <div class="row">
-                <h2>Sản phẩm mới</h2>
-            </div>
-        </div>
-    </section>
     <!-- Latest Blog Section End -->
