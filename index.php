@@ -9,12 +9,8 @@ if (isset($_SESSION['iduser'])) {
     $tk =  selectone_tk($_SESSION['iduser']);
 }
 include './view/header.php';
-include './view/home.php';
 include 'model/validate_form.php';
 include 'model/validate_pass.php';
-
-
-
 
 // $list_sp_home = loadAll_sanpham();
 
@@ -85,8 +81,28 @@ if (isset($_GET['act']) && $_GET['act'] != '') {
             // update_trangthai($_GET['id_dh']);
             header('Location: ?act=mytaikhoan');
             break;
-        case 'mytaikhoan':
+        
+        case 'chitietsanpham':{
+            include './view/shop-details.php';
+            break;
+        }
+        case 'home':{
+            include './view/home.php';
+            break;
+        }
+        case 'giohang':{
+            include './view/shopping-cart.php';
+            break;
+        }
+        default:{
+            header('location:index.php?act=home');
+        }
+        break;
     }
 }
+else {
+    header('location:index.php?act=home');
+}
+
 include 'view/footer.php';
 ob_end_flush();
