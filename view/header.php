@@ -35,14 +35,14 @@ if ($result->num_rows > 0) {
         rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="view/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="view/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="view/css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="view/css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="view/css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="view/css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="view/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="view/css/style.css" type="text/css">
+    <link rel="stylesheet" href="./view/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./view/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="./view/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="./view/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="./view/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="./view/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="./view/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="./view/css/style.css" type="text/css">
 </head>
 
 <body>
