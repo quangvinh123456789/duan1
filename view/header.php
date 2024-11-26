@@ -84,6 +84,8 @@ if ($result->num_rows > 0) {
                                         <?php
                                         if ($_SESSION['role'] === 1) { ?>
                                             <a href="../admin/index.php">Quản trị viên</a>
+                                            <a href="admin/">Quản trị viên</a>
+
                                             <a href="?act=dangxuat">Đăng Xuất</a>
                                         <?php } else { ?>
                                             <span><a>Tài Khoản</a></span>
