@@ -119,13 +119,12 @@ if ($result->num_rows > 0) {
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li><a href="/index.php">Trang chủ</a></li>
+                            <li><a href="index.php?act=home">Trang chủ</a></li>
                             <li class="active"><a href="./shop.php">Cửa hàng</a></li>
                             <li><a href="#">Trang</a>
                                 <ul class="dropdown">
                                     <li><a href="./about.php">giới thiệu</a></li>
-                                    <li><a href="./shop-details.php">Chi tiết cửa hàng</a></li>
-                                    <li><a href="./shopping-cart.php">Giỏ hàng</a></li>
+                                    <li><a href="index.php?act=giohang">Giỏ hàng</a></li>
                                     <li><a href="./checkout.php">Kiểm tra</a></li>
                                 </ul>
                             </li>

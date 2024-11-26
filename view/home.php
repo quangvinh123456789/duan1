@@ -54,7 +54,7 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><?= htmlspecialchars($product['name']) ?></h6>
-                                    <a href="#" class="add-cart">+ Add To Cart</a>
+                                    <a href="index.php?act=giohang" class="add-cart">+ Add To Cart</a>
                                     <div class="rating">
                                         <i class="fa fa-star-o"></i>
                                         <i class="fa fa-star-o"></i>
@@ -143,10 +143,3 @@
             </div>
         </div>
     </section>
-    <!-- Categories Section End -->
-
-    <!-- Instagram Section Begin -->
-    <!-- Instagram Section End -->
-
-    <!-- Latest Blog Section Begin -->
-    <!-- Latest Blog Section End -->
