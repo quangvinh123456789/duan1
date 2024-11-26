@@ -169,7 +169,7 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
                 include "./sanpham/list_sp.php";
                 break;
             }
-            case "list_tk": {
+        case "list_tk": {
                 $list_tk = loadall_taikhoan();
                 include "./taikhoan/list_tk.php";
                 break;
@@ -186,11 +186,15 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
                 include './taikhoan/update_tk.php';
                 break;
             }
-            case "list_donhang": {
+        case "list_donhang": {
                 $list_donhang = list_donhang();
                 include "./donhang/list_donhang.php";
                 break;
             }
+        case 'dangxuat':
+            session_unset();
+            header('location: ../index.php');
+            break;
     }
 } else {
     include "home.php";
