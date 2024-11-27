@@ -105,7 +105,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="?act=list_binhluan">
+                <a class="nav-link" href="?act=list">
                     <i class="fa-solid fa-comment-dots"></i>
                     <span>Quản lý bình luận</span>
                 </a>

@@ -125,7 +125,7 @@ if ($result->num_rows > 0) {
                                 <ul class="dropdown">
                                     <li><a href="./about.php">giới thiệu</a></li>
                                     <li><a href="index.php?act=giohang">Giỏ hàng</a></li>
-                                    <li><a href="./checkout.php">Kiểm tra</a></li>
+                                    <li><a href="index.php?act=kiemtra">Kiểm tra</a></li>
                                 </ul>
                             </li>
                             <li><a href="./contact.php">Liên hệ</a></li>

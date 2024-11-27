@@ -37,8 +37,6 @@
 
                             <a href="./index.html">Trang chủ</a>
 
-                            <a href="./index.php">Trang chủ</a>
-
                             <span>Giỏ hàng</span>
                         </div>
                     </div>
@@ -65,48 +63,39 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td class="product__cart__item">
-                                        <div class="product__cart__item__pic">
-                                            <img src="img2/sanpham1.webp" alt="">
-                                        </div>
-                                        <div class="product__cart__item__text">
-                                            <h6>Tissot Chemin des Tourelles Powermatic 80</h6>
-                                            <h5>24.255.000₫</h5>
-                                        </div>
-                                    </td>
-                                    <td class="quantity__item">
-                                        <div class="quantity">
-                                            <div class="pro-qty-2">
-                                                <input type="text" value="1">
+                            <?php
+                                $tong = 0; // Khởi tạo tổng tiền
+                                foreach ($_SESSION['mycart'] as $cart) { 
+                                    $ttien = $cart[5] * $cart[4]; // Tính tổng tiền cho từng sản phẩm
+                                    $tong += $ttien; // Cộng dồn vào tổng tiền
+                                    var_dump($cart[0]);
+                                    echo '
+                                    <tr>
+                                        <td class="product__cart__item">
+                                            <div class="product__cart__item__pic">
+                                                <img src="uploads/img_sp/'.$cart[2].'" alt="">
                                             </div>
-                                        </div>
-                                    </td>
-                                    <td class="cart__price">24.255.000₫</td>
-                                    <td class="cart__close"><i class="fa fa-close"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="product__cart__item">
-                                        <div class="product__cart__item__pic">
-                                            <img src="img2/sanpham2.webp" alt="">
-                                        </div>
-                                        <div class="product__cart__item__text">
-                                            <h6>Tissot PRX Powermatic</h6>
-                                            <h5>18.900.000₫</h5>
-                                        </div>
-                                    </td>
-                                    <td class="quantity__item">
-                                        <div class="quantity">
-                                            <div class="pro-qty-2">
-                                                <input type="text" value="1">
+                                            <div class="product__cart__item__text">
+                                                <h6>' . htmlspecialchars($cart[1]) . '</h6>
+                                                <h5>' . number_format($cart[5], 0, ",", ".") . ' VND</h5>
                                             </div>
-                                        </div>
-                                    </td>
-                                    <td class="cart__price">18.900.000₫</td>
-                                    <td class="cart__close"><i class="fa fa-close"></i></td>
-                                </tr>
+                                        </td>
+                                        <td class="quantity__item">
+                                            ' . $cart[4] . '
+                                        </td>
+                                        <td class="cart__price">' . number_format($ttien, 0, ",", ".") . '</td>
+                                        <td class="cart__close" >
+                                        <a href="index.php?act=deletegiohang&id=' . $cart[0] . '">
+                                        <i class="fa fa-close"></i></td>
+                                    </tr>
+                                    ';
+                                }
+
                                 
-                                
+                               
+                               
+                                ?>
+
                             </tbody>
                         </table>
                     </div>
@@ -114,7 +103,6 @@
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="continue__btn">
 
-                                <a href="shop.html">Tiếp tục mua sắm</a>
 
                                 <a href="shop.php">Tiếp tục mua sắm</a>
 
@@ -138,11 +126,8 @@
                     <div class="cart__total">
                         <h6>Tổng số giỏ hàng</h6>
                         <ul>
-                            <li>Tổng cộng <span>43,155,000đ</span></li>
+                            <li>Tổng cộng <span><?=  number_format($tong, 0, ",", ".")  ?></span></li>
                         </ul>
-
-                        <a href="checkout.html" class="primary-btn">Tiến hành thanh toán</a>
-
                         <a href="checkout.php" class="primary-btn">Tiến hành thanh toán</a>
 
                     </div>

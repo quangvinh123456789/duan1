@@ -5,6 +5,10 @@ include 'model/pdo.php';
 include 'model/sanpham.php';
 include 'model/danhmuc.php';
 include 'model/taikhoan.php';
+
+
+if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
+
 if (isset($_SESSION['iduser'])) {
     $tk =  selectone_tk($_SESSION['iduser']);
 }
@@ -90,10 +94,41 @@ if (isset($_GET['act']) && $_GET['act'] != '') {
             include './view/home.php';
             break;
         }
-        case 'giohang':{
-            include './view/shopping-cart.php';
+        
+        case 'kiemtra':{
+            include './view/checkout.php';
             break;
         }
+        case 'addtocart':
+            if (isset($_POST['addtocart']) && ($_POST['addtocart'] > 0)) {
+                $id_sp = $_POST['id_sp'];
+                $tensp = $_POST['tensp'];
+                $giamgia = $_POST['giamgia'];
+                $anhsp = $_POST['anhsp'];
+                $soluong = 1;
+                $ttien = $soluong * $giamgia;
+                $spadd = [$id_sp, $tensp, $anhsp, $giamgia, $soluong, $ttien];
+                array_push($_SESSION['mycart'], $spadd);
+            }
+            case 'cart':
+                include './view/shopping-cart.php';
+                break;
+            case 'deletegiohang':
+                if (isset($_GET['act']) && $_GET['act'] == 'deletegiohang' && isset($_GET['id'])) {
+                    $id = $_GET['id'];
+                    foreach ($_SESSION['mycart'] as $key => $cart) {
+                        if ($cart[0] == $id) {
+                            unset($_SESSION['mycart'][$key]);
+                            break;
+                        }
+                    }
+                    $_SESSION['mycart'] = array_values($_SESSION['mycart']); // Reset chỉ số mảng
+                    header("Location: index.php?act=addtocart"); // Quay về trang giỏ hàng
+                    exit();
+                }
+                include './view/shopping-cart.php';
+            break;
+      
         default:{
             header('location:index.php?act=home');
         }

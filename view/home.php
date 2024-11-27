@@ -36,16 +36,23 @@
                     </ul>
                 </div>
             </div>
-
+            <form action="index.php?act=addtocart" method="post">
             <div class="row product__filter">
                 <?php if (!empty($products)): ?>
                     <?php foreach ($products as $product): ?>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <input type="hidden" name="id_sp" value="<?= htmlspecialchars($product['id'])?>">
+                        <input type="hidden" name="tensp" value="<?= htmlspecialchars($product['name'])?>">
+                        <input type="hidden" name="anhsp" value="<?= htmlspecialchars($product['img'])?>">
+                        <input type="hidden" name="giamgia" value="<?= htmlspecialchars($product['gia_new'])?>">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg">
                                     <span class="label">New</span>
+                                        <input type="hidden" name="id_sp" value="<?= htmlspecialchars($product['id'])?>">
                                     <br> <br>
+                                    <a href="index.php?act=chitietsanpham">
                                     <img src="./uploads/img_sp/<?= htmlspecialchars($product['img']) ?>" alt="<?= htmlspecialchars($product['name']) ?> " width="230px" />
+                                    </a>
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="./uploads/img_sp/heart.png" alt="" width="50px"></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
@@ -54,7 +61,8 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><?= htmlspecialchars($product['name']) ?></h6>
-                                    <a href="index.php?act=giohang" class="add-cart">+ Add To Cart</a>
+                                    <!-- <a href="index.php?act=addtocart" class="add-cart" name="addtocart" >+ Add To Cart</a> -->
+                                    <input type="submit" class="add-cart" name="addtocart"  id="" value="addtocart" >
                                     <div class="rating">
                                         <i class="fa fa-star-o"></i>
                                         <i class="fa fa-star-o"></i>
@@ -87,12 +95,15 @@
                                     </div> -->
                                 </div>
                             </div>
-                        </div>
+                        
+                            </div>
+                        
                     <?php endforeach; ?>
                 <?php else: ?>
                     <p>Hiện không có sản phẩm nào để hiển thị.</p>
                 <?php endif; ?>
             </div>
+        </form>
         </div>
     </section>
     <!-- Product Section End -->
